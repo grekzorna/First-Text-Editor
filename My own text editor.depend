@@ -6,3 +6,10 @@
 	<unistd.h>
 	<filesystem>
 
+1714750837 source:d:\programming stuff\personal\first-text-editor\main.cpp
+	<iostream>
+	<thread>
+	<Windows.h>
+	<unistd.h>
+	<filesystem>
+

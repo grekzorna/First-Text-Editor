@@ -30,12 +30,14 @@ void OpenTextFile();
 
 int main()
 {
-
+    ShowWindow(GetConsoleWindow(), SW_HIDE);
 	WNDCLASS wc = {sizeof(WNDCLASS)};
 
+    wc.hIcon = LoadIcon(NULL, IDI_WARNING);
 	wc.hCursor = LoadCursor(0, IDC_ARROW);
 	wc.hInstance = GetModuleHandle(0);
 	wc.lpszClassName = "EpicWindowClass";
+	wc.hbrBackground = (HBRUSH)COLOR_WINDOW;
 	wc.style = 0;
 	wc.lpfnWndProc = windProc;
 
@@ -97,6 +99,7 @@ LRESULT windProc(HWND wind, UINT msg, WPARAM wp, LPARAM lp)
             SaveTextFile();
             break;
         case EXIT_APP:
+            DestroyWindow(GetConsoleWindow());
             DestroyWindow(wind);
             break;
         }
