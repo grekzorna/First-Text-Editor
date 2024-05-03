@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>My own text editor build log</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<body>
+<tt>
+Build started on: <u>02-05-2024 at 20:00.26</u><br />
+Build ended on: <u>02-05-2024 at 20:00.27</u><p />
+<b>-------------- Build: Debug in My own text editor (compiler: GNU GCC Compiler)---------------</b><br />
+g++.exe -Wall -fexceptions -g  -c "H:\Moje programy i strony\Codeblocks\Test Yourself\WinAPI\3\main.cpp" -o obj\Debug\main.o<br />
+g++.exe  -o "bin\Debug\My own text editor.exe" obj\Debug\main.o  -lcomdlg32  <br />
+H:\Moje programy i strony\Codeblocks\Test Yourself\WinAPI\3\main.cpp: In function 'LRESULT windProc(HWND, UINT, WPARAM, LPARAM)':<br />
+<font color="#0000ff">H:\Moje programy i strony\Codeblocks\Test Yourself\WinAPI\3\main.cpp:92:65: warning: passing NULL to non-pointer argument 4 of 'int MessageBoxA(HWND, LPCSTR, LPCSTR, UINT)' [-Wconversion-null]</font><br />
+                 MessageBox(wind, path, "Where is my file?", NULL);<br />
+                                                                 ^<br />
+H:\Moje programy i strony\Codeblocks\Test Yourself\WinAPI\3\main.cpp: In function 'void AddMenus(HWND)':<br />
+<font color="#0000ff">H:\Moje programy i strony\Codeblocks\Test Yourself\WinAPI\3\main.cpp:136:54: warning: passing NULL to non-pointer argument 3 of 'WINBOOL AppendMenuA(HMENU, UINT, UINT_PTR, LPCSTR)' [-Wconversion-null]</font><br />
+     AppendMenu(hFileSubmenu, MF_SEPARATOR, NULL, NULL);<br />
+                                                      ^<br />
+Output file is bin\Debug\My own text editor.exe with size 112.65 KB<br />
+<font color="#0000ff">Process terminated with status 0 (0 minute(s), 1 second(s))</font><br />
+<font color="#0000ff">0 error(s), 2 warning(s) (0 minute(s), 1 second(s))</font><br />
+</tt>
+</body>
+</html>
